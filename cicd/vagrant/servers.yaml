@@ -1,0 +1,7 @@
+---
+- name: cicd-1
+  box: ubuntu/trusty64
+  ram: 4096
+  cpu: 4
+  ip: 172.17.9.102
+  proxy: 0
