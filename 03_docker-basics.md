@@ -1,8 +1,7 @@
 ## Working with containers
 After successful installation of Docker, please run:
 ```bash
-git clone https://github.com/ContainerSolutions/docker-workshop-1d
-cd docker-workshop-1d
+git clone https://github.com/ContainerSolutions/puzzle-docker-training
 docker run -d -p 8000:1948 -v $(PWD):/usr/src/app/ muellermich/reveal-md:latest
 open http://0.0.0.0:8000/hands-on.md#/5
 ```
