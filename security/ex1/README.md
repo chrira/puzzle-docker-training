@@ -18,15 +18,15 @@
 #### Run in read only mode:
 To prevent more breaches...
 
-    $ docker run --read-only -it --rm -p 1337:1337 --name node-hack node-hack
+    $ docker run --read-only -it --rm -p 1337:1337 --name example-app example-app
 
 Try to upload `evil.yml` again => no breach.
 
 #### Poor mans kill & supervisor scripts:
 Use this if you want to demo cases where you can't use `--read-only` (the "supervisor" loop is needed as `--restart=always` does not work with `--rm`)
 
-    $ while :; do test $(docker diff node-hack | wc -l) -gt 0 && docker kill node-hack; sleep 3; done
+    $ while :; do test $(docker diff node-hack | wc -l) -gt 0 && docker kill example-app; sleep 3; done
     # in a different terminal:
-    $ while :; do docker run -it --rm -p 1337:1337 --name node-hack node-hack; sleep 2; done
+    $ while :; do docker run -it --rm -p 1337:1337 --name example-app example-app; sleep 2; done
 
 Upload `evil.yml` again => breach is undone after a few seconds.
