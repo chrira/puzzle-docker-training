@@ -84,5 +84,5 @@ kubectl logs k8s-hello-world
 Use the `kubectl exec` command to run an interactive shell inside the `k8s-hello-world` Pod:
 
 ```
-kubectl exec monolith --stdin --tty -c k8s-hello-world /bin/sh
+kubectl exec -ti k8s-hello-world /bin/sh
 ```
