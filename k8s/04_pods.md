@@ -51,16 +51,6 @@ kubectl describe pods <pod-name>
 
 ----
 
-### Quiz
-
-* What is the IP address of the `monolith` Pod?
-* What node is the `monolith` Pod running on?
-* What containers are running in the `monolith` Pod?
-* What are the labels attached to the `monolith` Pod?
-* What arguments are set on the `monolith` container?
-
-----
-
 ### Interact with a Pod remotely
 
 Pods are allocated a private IP address by default and cannot be reached outside of the cluster. Use the `kubectl port-forward` command to map a local port to a port inside the `k8s-hello-world` pod.
