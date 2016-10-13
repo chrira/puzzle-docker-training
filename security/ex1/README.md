@@ -4,7 +4,7 @@
 
 #### Build & run:
 
-    $ docker build -t node-hack .
+    $ docker build -t example-app .
     $ docker run -it --rm -p 1337:1337 --name example-app example-app
 
 #### Browse to and demo app:
