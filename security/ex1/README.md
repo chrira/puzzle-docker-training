@@ -8,9 +8,8 @@
     $ docker run -it --rm -p 1337:1337 --name node-hack node-hack
 
 #### Browse to and demo app:
-With docker-machine on OS X
 
-    $ open http://$(docker-machine ip default):1337
+    $ open http://0.0.0.0:1337
 
 - Upload `yaml/nice.yml`, `yaml/broken.yml` and `yaml/evil.yml` for demonstration.
 - Browse to start page to see defaced website.
